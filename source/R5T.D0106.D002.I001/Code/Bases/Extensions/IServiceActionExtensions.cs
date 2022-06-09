@@ -11,7 +11,7 @@ namespace R5T.D0106.D002.I001
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="ProcessStartTimeDirectoryNameProvider"/> implementation of <see cref="IProcessStartTimeDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ProcessStartTimeDirectoryNameProvider"/> implementation of <see cref="IProcessStartTimeDirectoryNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessStartTimeDirectoryNameProvider> AddProcessStartTimeDirectoryNameProviderAction(this IServiceAction _,
             IServiceAction<IProcessStartTimeProvider> processStartTimeProviderAction,
@@ -25,7 +25,7 @@ namespace R5T.D0106.D002.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="ProcessDirectoryNameProvider"/> implementation of <see cref="IProcessDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ProcessDirectoryNameProvider"/> implementation of <see cref="IProcessDirectoryNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessDirectoryNameProvider> AddProcessDirectoryNameProviderAction(this IServiceAction _,
             IServiceAction<IProcessNameProvider> processNameProviderAction,
@@ -39,7 +39,7 @@ namespace R5T.D0106.D002.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="YYYYMMDD_HHMMSS_DateTimeDirectoryNameProvider"/> implementation of <see cref="IDateTimeDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="YYYYMMDD_HHMMSS_DateTimeDirectoryNameProvider"/> implementation of <see cref="IDateTimeDirectoryNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IDateTimeDirectoryNameProvider> AddYYYYMMDD_HHMMSS_DateTimeDirectoryNameProviderAction(this IServiceAction _)
         {
