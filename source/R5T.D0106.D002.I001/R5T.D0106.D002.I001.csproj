@@ -4,8 +4,13 @@
     <ProjectReference Include="..\..\..\R5T.D0107\source\R5T.D0107.Base\R5T.D0107.Base.csproj" />
     <ProjectReference Include="..\..\..\R5T.Magyar\source\R5T.Magyar\R5T.Magyar.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0062\source\R5T.T0062.X001\R5T.T0062.X001.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0132\source\R5T.T0132\R5T.T0132.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0147\source\R5T.T0147\R5T.T0147.csproj" />
     <ProjectReference Include="..\R5T.D0106.Base\R5T.D0106.Base.csproj" />
     <ProjectReference Include="..\R5T.D0106.D002.Base\R5T.D0106.D002.Base.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\Functionality\" />
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>

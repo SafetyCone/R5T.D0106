@@ -9,7 +9,7 @@ using R5T.T0063;
 
 namespace R5T.D0106.D002.I001
 {
-    public static class IServiceCollectionExtensions
+    public static partial class IServiceCollectionExtensions
     {
         /// <summary>
         /// Adds the <see cref="ProcessStartTimeDirectoryNameProvider"/> implementation of <see cref="IProcessStartTimeDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
@@ -37,16 +37,6 @@ namespace R5T.D0106.D002.I001
                 .Run(processNameProviderAction)
                 .Run(directoryNameProviderAction)
                 .AddSingleton<IProcessDirectoryNameProvider, ProcessDirectoryNameProvider>();
-
-            return services;
-        }
-
-        /// <summary>
-        /// Adds the <see cref="YYYYMMDD_HHMMSS_DateTimeDirectoryNameProvider"/> implementation of <see cref="IDateTimeDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
-        /// </summary>
-        public static IServiceCollection AddYYYYMMDD_HHMMSS_DateTimeDirectoryNameProvider(this IServiceCollection services)
-        {
-            services.AddSingleton<IDateTimeDirectoryNameProvider, YYYYMMDD_HHMMSS_DateTimeDirectoryNameProvider>();
 
             return services;
         }
